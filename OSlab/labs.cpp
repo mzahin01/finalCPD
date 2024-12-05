@@ -1,7 +1,6 @@
 //بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ
 #include <bits/stdc++.h>
 using namespace std;
-
 int main() {
     int n;
     int waitingTime[n], turnaroundTime[n], compTime[n];
