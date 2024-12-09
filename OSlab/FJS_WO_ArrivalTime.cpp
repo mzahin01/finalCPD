@@ -11,12 +11,13 @@ int main() {
         vector<pair<int, int>> p(n);
         cout << "Enter the burst times for " << n << " processes:" << endl;
         for (int i = 0; i < n; i++) {
-            cout << "Process " << i + 1 << ": ";
+            cout << "P" << i + 1 << ": ";
             cin >> p[i].second;
             arr[i][1] = p[i].second;
             arr[i][0] = i + 1;
             p[i].first = i + 1;
         }
+        cout << endl;
         sort(p.begin(), p.end(), [](const pair<int, int>& a, const pair<int, int>& b) {
             return a.second < b.second;
             });
